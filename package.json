@@ -1,0 +1,27 @@
+{
+  "name": "battleship-odin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoublyBland/Battleship-Odin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoublyBland/Battleship-Odin/issues"
+  },
+  "homepage": "https://github.com/DoublyBland/Battleship-Odin#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1"
+  }
+}
