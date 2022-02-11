@@ -26,7 +26,7 @@ test('hit() takes a number and marks that position as hit', () => {
 test('isSunk() calculates whether ship is sunk based on length and hits', () => {
   const newShip = ship(5);
   newShip.hit(3, newShip.hits);
-  newShip.sunkStatus = newShip.isSunk(newShip.hits);
+  newShip.sunkStatus = newShip.isSunk();
   expect(newShip.sunkStatus).toEqual(false);
 });
 
@@ -35,8 +35,8 @@ test('isSunk() returns true when all positions hit', () => {
   newShip.hit(1, newShip.hits);
   newShip.hit(2, newShip.hits);
   newShip.hit(3, newShip.hits);
-  newShip.isSunk(newShip.hits);
-  newShip.sunkStatus = newShip.isSunk(newShip.hits);
+  // newShip.isSunk(newShip.hits);
+  newShip.sunkStatus = newShip.isSunk();
   expect(newShip.hits).toEqual([1, 1, 1]);
   expect(newShip.sunkStatus).toEqual(true);
 });
